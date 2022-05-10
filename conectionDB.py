@@ -2,7 +2,7 @@ import mysql.connector
 
 args = {'host': 'localhost', 
         'user': 'root', 
-        'password': 'gaspar123', 
+        'password': '1234una', 
         'dbname': 'examen', 
         'tableName': 'usuarios'}
 
@@ -28,7 +28,7 @@ def connecion():
             #     print("lastName = ", row[2])
             #     print("address = ", row[3])
             return records
-    except Error as e:
+    except OSError as e:
         print("Error while connecting to MySQL", e)
     finally: 
         if connection.is_connected():
