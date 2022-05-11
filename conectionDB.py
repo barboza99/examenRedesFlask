@@ -2,7 +2,7 @@ import mysql.connector
 
 args = {'host': 'localhost', 
         'user': 'root', 
-        'password': '1234una', 
+        'password': 'gaspar123', 
         'dbname': 'examen', 
         'tableName': 'usuarios'}
 

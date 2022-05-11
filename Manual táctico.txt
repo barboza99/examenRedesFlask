@@ -1,0 +1,7 @@
+https://www.linuxenespañol.com/tutoriales/como-instalar-mysql-en-ubuntu/
+
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-es
+
+https://oscarabadfolgueira.com/crear-una-base-datos-mysql-desde-consola/
+
+https://python-guide-es.readthedocs.io/es/latest/starting/install3/linux.html
