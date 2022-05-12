@@ -2,7 +2,7 @@ import mysql.connector
 
 args = {'host': 'localhost', 
         'user': 'root', 
-        'password': 'gaspar123', 
+        'password': 'gaspar12345', 
         'dbname': 'examen', 
         'tableName': 'usuarios'}
 
@@ -21,17 +21,16 @@ def connecion():
             cursor.execute(query1)
             records = cursor.fetchall()
             
-            # print("\nFilas: ")
-            # for row in records:
-            #     print("Id = ", row[0])
-            #     print("firstName = ", row[1])
-            #     print("lastName = ", row[2])
-            #     print("address = ", row[3])
+            if connection.is_connected():
+                cursor.close()
+                connection.close()
+                print("MySQL connection is closed")
+            
             return records
     except OSError as e:
         print("Error while connecting to MySQL", e)
-    finally: 
-        if connection.is_connected():
-            cursor.close()
-            connection.close()
-            print("MySQL connection is closed")
+    # finally: 
+    #     if connection.is_connected():
+    #         cursor.close()
+    #         connection.close()
+    #         print("MySQL connection is closed")
